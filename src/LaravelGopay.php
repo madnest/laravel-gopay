@@ -19,9 +19,9 @@ class LaravelGopay
      * Create standard payment
      *
      * @param array $params
-     * @return void
+     * @return \GoPay\Http\Response
      */
-    public function createPayment(array $params)
+    public function createPayment(array $params): \GoPay\Http\Response
     {
         return $this->gopay->createPayment($params);
     }
