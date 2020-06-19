@@ -14,5 +14,5 @@ return [
     ],
 
     'return_url' => env('GOPAY_RETURN'),
-    'notify' => env('GOPAY_NOTIFY'),
+    'notify_url' => env('GOPAY_NOTIFY'),
 ];

@@ -24,7 +24,7 @@ class LaravelGopayServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laravel-gopay');
+        $this->mergeConfigFrom(__DIR__ . '/../config/laravel-gopay.php', 'laravel-gopay');
 
         // Register the main class to use with the facade
         $this->app->singleton('laravel-gopay', function () {
