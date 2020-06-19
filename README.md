@@ -1,2 +1,2 @@
-# laravel-gopay
+# Laravel GoPay
 Laravel GoPay wrapper [WIP]
