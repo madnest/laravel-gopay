@@ -16,9 +16,10 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "gopay/payments-sdk-php": "^1.4",
-        "illuminate/support": "^6.0"
+        "php": ">=7.2.0",
+        "laravel/framework": "^7.0",
+        "illuminate/support": "^6.18|^7.0",
+        "gopay/payments-sdk-php": "^1.4"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
@@ -37,7 +38,6 @@
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
