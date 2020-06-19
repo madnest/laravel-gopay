@@ -1,0 +1,55 @@
+{
+    "name": "madnest/laravel-gopay",
+    "description": "Laravel GoPay",
+    "keywords": [
+        "madnest",
+        "laravel-gopay"
+    ],
+    "homepage": "https://github.com/madnest/laravel-gopay",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jakub Theimer",
+            "email": "theimer@madne.st",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "gopay/payments-sdk-php": "^1.4",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Madnest\\LaravelGopay\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Madnest\\LaravelGopay\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Madnest\\LaravelGopay\\LaravelGopayServiceProvider"
+            ],
+            "aliases": {
+                "LaravelGopay": "Madnest\\LaravelGopay\\LaravelGopayFacade"
+            }
+        }
+    }
+}
