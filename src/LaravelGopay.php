@@ -30,9 +30,9 @@ class LaravelGopay
      * Get status of the payment
      *
      * @param mixed $id
-     * @return void
+     * @return \GoPay\Http\Response
      */
-    public function getStatus($id)
+    public function getStatus($id): \GoPay\Http\Response
     {
         return $this->gopay->getStatus($id);
     }
@@ -42,9 +42,9 @@ class LaravelGopay
      *
      * @param mixed $id
      * @param mixed $data
-     * @return void
+     * @return \GoPay\Http\Response
      */
-    public function refundPayment($id, $data)
+    public function refundPayment($id, $data): \GoPay\Http\Response
     {
         return $this->gopay->refundPayment($id, $data);
     }
@@ -53,9 +53,9 @@ class LaravelGopay
      * Get EET payment reciept
      *
      * @param mixed $paymentId
-     * @return void
+     * @return \GoPay\Http\Response
      */
-    public function eetReceipts($paymentId)
+    public function eetReceipts($paymentId): \GoPay\Http\Response
     {
         return $this->gopay->getEETReceiptByPaymentId($paymentId);
     }
