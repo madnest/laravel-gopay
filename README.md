@@ -1,4 +1,4 @@
-# Laravel GoPay
+# [WIP] Laravel GoPay
 
 <!-- [![Latest Version on Packagist](https://img.shields.io/packagist/v/madnest/laravel-gopay.svg?style=flat-square)](https://packagist.org/packages/madnest/laravel-gopay)
 [![Build Status](https://img.shields.io/travis/madnest/laravel-gopay/master.svg?style=flat-square)](https://travis-ci.org/madnest/laravel-gopay)
