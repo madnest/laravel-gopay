@@ -13,6 +13,6 @@ return [
         'cache_timeout' => 30 * 60, // Defaults to 30 minutes
     ],
 
-    'return_url' => env('GOPAY_RETURN'),
-    'notify_url' => env('GOPAY_NOTIFY'),
+    'return_url' => env('GOPAY_RETURN_URL'),
+    'notify_url' => env('GOPAY_NOTIFY_URL'),
 ];
