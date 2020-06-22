@@ -8,7 +8,7 @@ return [
         'isProductionMode' => env('GOPAY_PRODUCTION'),
         'scope' => GoPay\Definition\TokenScope::ALL,
         'language' => GoPay\Definition\Language::CZECH,
-        'timeout' => 30,
+        'timeout' => 60,
         'cache' => new Madnest\LaravelGopay\Cache\GoPayTokenCache,
         'cache_timeout' => 30 * 60, // Defaults to 30 minutes
     ],
